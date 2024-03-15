@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing with files</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="makeItFlex">
+        <div>
+            <input type="file" id="fileInput" multiple directory webkitdirectory mozdirectory msdirectory odirectory>
+        </div>
+        <div>
+            <button id="addFileBtn" class="add-file-btn">Add File</button>
+        </div>
+        
+        <div id="fileModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add File</h2>
+            <input type="file" id="uploadFileInput">
+            <button id="uploadBtn">Upload</button>
+          </div>
+        </div>
+    </div>
+  
+  <table id="fileTable">
+    <thead>
+      <tr>
+        <th>Sr. No.</th>
+        <th>Title</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="fileList">
+      <!-- File list will be inserted here -->
+    </tbody>
+  </table>
+ 
+  <script src="index.js"></script>
+</body>
+</html>
